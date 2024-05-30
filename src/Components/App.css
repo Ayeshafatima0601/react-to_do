@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.app-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  border: #0056b3;
+}
+
+.app-link-1 {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  border: #0056b3;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  display: block;
+  font-weight: bold;
+}
+
+.input-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.button-container button, .button-container a {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button-container button:hover, .button-container a:hover {
+  background-color: #0056b3;
+}
+
+.button-link {
+  margin-right: 10px;
+}
+.delete {
+  color: red;
+  font-weight: bold;
+ }
+
+.todo-actions {
+  display: flex;
+  align-items: center;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-actions button:not(:first-child) {
+  margin-left: 20px;
+}
+
+.create-page-container {
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.create-page-container h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.create-page-container form {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.create-page-container label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.create-page-container input[type="text"] {
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add {
+  height: 35px;
+  width: 100px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-page-container button.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.create-page-container a.back-link {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 200px;
+}
+
+.create-page-container a.back-link:hover {
+  text-decoration: underline;
+} 
+
+.edit-page-container {
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.edit-page-container h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.edit-page-container label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.edit-page-container form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-page-container input[type="text"] {
+  height: 30px;
+  margin-left: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.edit-page-container button.save-btn {
+  height: 35px;
+  width: 100px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-page-container button.save-btn:hover {
+  background-color: #0056b3;
+}
+
+.edit-page-container a.back-link {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.edit-page-container a.back-link:hover {
+  text-decoration: underline;
+}

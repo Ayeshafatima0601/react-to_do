@@ -26,7 +26,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <h1 className="app-title">Todo List</h1>
+        <h1 className="app-title">TO-DO LIST</h1>
         <Routes>
           <Route path="/" element={<HomePage todos={todos} editTodo={editTodo} deleteTodo={deleteTodo} />} />
           <Route path="/create" element={<CreatePage addTodo={addTodo} />} />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 
-function EditPage({ todos }) {
+function EditPage({ todos, editTodo }) {
     const { id } = useParams();
     const todoToEdit = todos.find(todo => todo.id === parseFloat(id));
     const [todo, setTodo] = useState('');
@@ -19,7 +19,7 @@ function EditPage({ todos }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log("Edited todo:", todo);
+        editTodo(parseFloat(id), todo);
         navigate('/');
     };
 

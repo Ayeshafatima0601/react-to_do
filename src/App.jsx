@@ -30,7 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage todos={todos} editTodo={editTodo} deleteTodo={deleteTodo} />} />
           <Route path="/create" element={<CreatePage addTodo={addTodo} />} />
-          <Route path="/edit/:id" element={<EditPage todos={todos} />} />
+          <Route path="/edit/:id" element={<EditPage todos={todos} editTodo={editTodo} />} />
         </Routes>
       </div>
     </Router>

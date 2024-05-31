@@ -102,9 +102,14 @@ body {
   align-items: center;
 }
 
+.todo-item.checked .todo-text {
+  text-decoration: line-through;
+}
+
 .todo-item {
   display: flex;
   align-items: center;
+  cursor: pointer;
   justify-content: space-between;
   background-color: #fff;
   border-radius: 8px;

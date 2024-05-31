@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
-// delete todos
 function HomePage({ todos, editTodo, deleteTodo }) {
     const handleDelete = (id) => {
         deleteTodo(id);
+    };
+
+    const [checkedTodos, setCheckedTodos] = useState([]);
+
+    const toggleTodo = (id) => {
+        if (checkedTodos.includes(id)) {
+            setCheckedTodos(checkedTodos.filter(todoId => todoId !== id));
+        } else {
+            setCheckedTodos([...checkedTodos, id]);
+        }
+    };
+
+    const handleDoubleClick = (id) => {
+        toggleTodo(id);
     };
 
     return (
@@ -15,7 +28,12 @@ function HomePage({ todos, editTodo, deleteTodo }) {
             </button>
             <ul className="todo-list">
                 {todos.map(todo => (
-                    <li key={todo.id} className="todo-item">
+                    <li key={todo.id} className={`todo-item ${checkedTodos.includes(todo.id) ? 'checked' : ''}`} onDoubleClick={() => handleDoubleClick(todo.id)}>
+                    <input
+                                type="checkbox"
+                                checked={checkedTodos.includes(todo.id)}
+                                onChange={() => toggleTodo(todo.id)}
+                            />
                         <div className="todo-text">{todo.text}</div>
                         <div className="todo-actions">
                             <button>

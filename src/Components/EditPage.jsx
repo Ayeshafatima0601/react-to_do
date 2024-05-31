@@ -7,6 +7,7 @@ function EditPage({ todos, editTodo }) {
     const [todo, setTodo] = useState('');
     const navigate = useNavigate();
 
+    //Todo should be loaded before it is edited
     useEffect(() => {
         if (todoToEdit) {
             setTodo(todoToEdit.text);
@@ -17,6 +18,7 @@ function EditPage({ todos, editTodo }) {
         setTodo(event.target.value);
     };
 
+    //Todo should be updated after it is edited 
     const handleSubmit = (event) => {
         event.preventDefault();
         editTodo(parseFloat(id), todo);
